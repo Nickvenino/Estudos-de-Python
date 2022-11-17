@@ -121,15 +121,15 @@
 #print('A quantidade de letras do primeiro nome é {}.'.format(quant1name))
 
 #MOSTRAR UNIDADE, DEZENA, CENTA E MILHAR DE UM NÚMERO QUALQUER
-num = int((input('Digite um número de 0 a 9999: ')))
-u = num // 1 %10 #pegar a unidade
-d = num // 10 %10 #pegar a dezena
-c = num // 100 %10 #pegar a centena
-m = num // 1000 %10 #pegar o milhar
-print('Unidade: {}'.format(u))
-print('Dezenas: {}'.format(d))
-print('Centenas: {}'.format(c))
-print('Milhar: {}'.format(m))
+#num = int((input('Digite um número de 0 a 9999: ')))
+#u = num // 1 %10 #pegar a unidade
+#d = num // 10 %10 #pegar a dezena
+#c = num // 100 %10 #pegar a centena
+#m = num // 1000 %10 #pegar o milhar
+#print('Unidade: {}'.format(u))
+#print('Dezenas: {}'.format(d))
+#print('Centenas: {}'.format(c))
+#print('Milhar: {}'.format(m))
 
 #frase = '   nicolli venino santana  '
 #frase = frase.strip()
@@ -171,6 +171,25 @@ print('Milhar: {}'.format(m))
 #tenha uma vida legal
 #vc é incrivel
 #esta tudo bem""")
+
+#EM QUE NÚMERO EU PENSEI:
+
+#from random import randint
+#computador = randint(0,10)
+#print('Olá! Sou um computador e pensei em um número entre 0 e 10...')
+##zwhile jogador != computador:
+#        jogador = int(input('Você errou! Tente novamente: '))
+#print('PARABÉNS! Você acertou!')
+
+#VERIFICAR SE UM ANO É BISSEXTO OU NÃO:
+#from datetime import date
+#ano = int(input('Insira o ano que quer analisar (Coloque 0 para o ano atual): '))
+#if ano == 0:
+#        ano = date.today().year
+#if ano %4 ==0 and ano %100 !=0 or ano %400 ==0:
+#        print('{}, é um ano BISSEXTO!'.format(ano))
+#else:
+#        print('{}, NÃO é um ano bissexto!'.format(ano))
 
 #CALCULADORA
 
