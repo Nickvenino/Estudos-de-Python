@@ -1,8 +1,176 @@
-# SOMA SIMPLES
-#n1 = int(input('Digite o primeiro número: '))
-#n2 = int(input('Digite o segundo número: '))
-#s = n1+n2
-#print('A soma é {}!'.format(s))
+# MODULOS - IMPORT - IMPORTA TUDO DA BIBLIOTECA
+# FROM BIBLIOTECA IMPORT NOME DO Q VC QUER - IMPORTAR UMA UNICA COISA DE UMA BIBLIOTECA
+# BIBLIOTECA MATH
+# CEIL - ARREDONDA PRA CIMA
+# FLOOR - ARREDONDA PRA BAIXO
+# TRUNC - ELIMINA DA VIRGULA PRA FRENTE
+# SQRT - CALULAR RAIZ QUADRADA
+# FACTORIAL - FATORIAL
+# MATH. - VER TODAS AS FUNCIONALIDADES
+
+#from math import sqrt,trunc
+#num = int(input('Insira um número: '))
+#raiz = sqrt(num)
+#print('A raiz quadrada de {} é {}'.format(num,trunc(raiz)))
+
+#import math 
+#num = int(input('Insira um número: '))
+#raiz = math.sqrt(num)
+#print('A raiz quadrada de {} é {}'.format(num,math.trunc(raiz)))
+
+#MANIPULANDO TEXTO
+
+#FATIAMENTO
+
+# frase[9] - indice 9
+
+#frase = 'nicolli'
+#print(frase[6])
+# n = 0, i = 1, c = 2, o = 3, l = 4, l = 5, i = 6.
+#[1:5] - do 1 ao 4
+#[1:10:2] - do ao 10 pulando de 2 em 2
+#[:5] - do 0 ao 5
+#[5:] - do 5 ao final
+#[9::3] - do 9 ao final pulando de 3 em 3
+
+#ANALISE
+
+#Len(frase) - tamanho da frase (quant de caracteres)
+#frase = 'nicolli venino santana'
+#print(len(frase))
+
+#frase.count('o') - ver quantas vezes aparece a letra o
+#frase = 'nicolli venino santana'
+#print(frase.count('i'))
+
+#frase.count('o',0,13) - ver quantas vezes aparece a letra o + contagem
+#frase = 'nicolli venino santana'
+#print(frase.count('o',0,9))
+
+#frase.find('nick') - em que momento começou a parte deo de uma frase - #-1 igual a não tem
+#frase = 'nicolli venino santana'
+#print(frase.find('nino'))
+#frase.rfind - em que momento apareceu pela ultima vez 
+
+# in - curso in fraseo - existe a palavra curso na variavel frase?
+#frase = 'nicolli venino santana'
+#print('venino' in frase)
+#retorna False or True
+
+#TRANSFORMAÇÃO
+
+#frase.replace('nicole', 'nicolli') - substitui nicole para nicolli
+#frase = 'nicole venino santana'
+#print(frase)
+#print(frase.replace('nicole', 'nicolli'))
+
+#frase.upper() - deixar tudo em maiusculo
+#frase = 'nicolli venino santana'
+#print(frase.upper())
+
+#frase.lower() - deixa tudo em minusculo
+#frase = 'NICOLLI VENINO SANTANA'
+#print(frase.lower())
+
+#frase.capitalize() - deixa só o primeiro caractere em maiusculo
+#frase = 'nicolli venino santana'
+#print(frase.capitalize())
+
+#frase.title() - deixa todos primeiros carcteres das palavras em maiusculo
+#frase = 'nicolli venino santana'
+#print(frase.title())
+
+#frase.strip() - remove espaços no começo e final da frase
+#frase = '   nicolli venino santana  '
+#print(frase)
+#print(frase.strip())
+
+#frase.rstrip() - remove só os espaços da direita (ultimos)
+#frase.lscript() - remove só os espaços da esquerda (primeiros)
+
+#DIVISÃO
+
+#frase.split() - divisão considerando os espaços (lista)
+#frase = 'nicolli venino santana'
+#print(frase.split())
+
+#JUNÇÃO
+
+#'-'.join(frase) - junta considerando os espaços
+#frase = 'nicolli venino santana'
+#print('-'.join(frase))
+
+#BRINCANDO COM AS MANIPULAÇÕES DE TEXTO
+
+#frase = '   nicolli venino santana  '
+#frase = frase.strip()
+#lista = frase.split()
+#print(lista[0])
+
+#MOSTRA O NOME COM LETRAS MAISCULAS E MINUSCLAS + QUANTIDADE LETRAS DO NOME SEM OS ESPAÇOS E DO PRIMEIRO NOME
+#name = input('Digite seu nome inteiro: ')
+#print(name.upper())
+#print(name.lower())
+#separado = name.split()
+#n1 = len(separado[0].strip())
+#n2 = len(separado[1].strip())
+#n3 = len(separado[2].strip())
+#resultado = n1+n2+n3
+#print('A quantidade de letras do nome, sem os espaços é {}.'.format(resultado))
+#quant1name = len(separado[0])
+#print('A quantidade de letras do primeiro nome é {}.'.format(quant1name))
+
+#MOSTRAR UNIDADE, DEZENA, CENTA E MILHAR DE UM NÚMERO QUALQUER
+num = int((input('Digite um número de 0 a 9999: ')))
+u = num // 1 %10 #pegar a unidade
+d = num // 10 %10 #pegar a dezena
+c = num // 100 %10 #pegar a centena
+m = num // 1000 %10 #pegar o milhar
+print('Unidade: {}'.format(u))
+print('Dezenas: {}'.format(d))
+print('Centenas: {}'.format(c))
+print('Milhar: {}'.format(m))
+
+#frase = '   nicolli venino santana  '
+#frase = frase.strip()
+#lista = frase.split()
+#print(lista[0])
+
+#LER O NOME DE UMA CIDADE E VER SE ELA COMEÇA COM SÃO:
+#cidade = input('Digite o nome da sua cidade: ')
+#c = cidade.split()
+#if c[0] == 'São':
+#        print('Sua cidade começa com o nome São!')
+#else:
+#        print('Sua cidade não começa com o nome São!')
+
+#OUTRA FORMA:
+#city = input('Qual sua ciadade: ')
+#c = city.split()
+#print("Sua cidade começa com Santo:{}".format('Santo' in c[0]))
+#retorna False or True
+
+#VER SE A PESSOA TEM SILVA NO NOME
+#name = input('Digite o seu nome:\n')
+#print('Você tem Silva no nome: {}'.format('Silva' in name))
+
+#LER UMA FRASE VER QUANTAS VEZES APARECE A LETRA "A", EM QUAL APOSIÇÃO ELA APARECE ´PELA PRIMEIRA E A ULTIMA VEZ
+#frase = input('Digite uma frase: ')
+#print('A frase contem {} vezes a letra A'.format(frase.count('a')))
+#print('A primeira letra A se encontra na posição {}'.format(frase.find('a')))
+#print('A ultima letra A se encontra na posição {}'.format(frase.rfind('a')))
+
+#MOSTRAR O PRIMEIRO E O ULTIMO NOME
+#name = input('Insira o seu nome inteiro: ')
+#print(n)
+#print('Primeiro nome: {}'.format(n[0]))
+#print('Ultimo nome: {}'.format(n[-1]))
+
+#Pular linha sem pular linha - usar """  """
+#print("""bom dia nick
+#tenha uma vida legal
+#vc é incrivel
+#esta tudo bem""")
 
 #CALCULADORA
 
@@ -71,11 +239,11 @@
 #    if opção == 'ok':
 #        n1 = int(input('{}, escolha um número: '.format(player1)))
 #        n2 = int(input('{}, escolha um número: '.format(player2)))
-#        # impar + par = impar
-#        # par + impar = impar
-#        # par + par + par
-#        # impar + impar = par
-#        # player1 = par - player2 = impar
+        # impar + par = impar
+        # par + impar = impar
+        # par + par + par
+        # impar + impar = par
+        # player1 = par - player2 = impar
 #        while n1%2 == 0:
 #            if n2%2 == 0:
 #                print('O resultado da soma é PAR! O ganhador é {}!'.format(player1))
@@ -96,7 +264,7 @@
 #        n2 = int(input('{}, escolha um número: '.format(player2)))
 #        while n1%2 == 0:
 #            if n2%2 == 0:
-#                print('O resultado da soma é PAR! O ganhador é {}!'.format(player2))
+#               print('O resultado da soma é PAR! O ganhador é {}!'.format(player2))
 #            elif n2%2 != 0:
 #                print('O resultado da soma é IMPAR! O ganhador é {}!'.format(player1))
 #            break
