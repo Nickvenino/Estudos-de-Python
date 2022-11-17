@@ -32,11 +32,134 @@
 #    rest = n1%n2
 #    print('O resto da divisão entre {0} e {1} é {2}'.format(n1,n2,rest))
 
-#MEXENDO COM VARIAVEIS
+#CALCULAR A MÉDIA DE NOTAS
+#ABAIXO DE 5: REPROVADO
+#EXATAMENTE 5: RECUPERAÇÃO
+#ACIMA DE 5: APROVADO
+
+#name = input('Olá aluno, qual é o seu nome?\n')
+#print('Olá, {}'.format(name))
+#port = int(input('Insira a sua nota de português: '))
+#mat = int(input('Insira a sua nota de matemática: '))
+#geo = int(input('Insira a sua nota de geografia: '))
+#his = int(input('Insira a sua nota de história: '))
+#art = int(input('Insira s aua nota de artes: '))
+#bio = int(input('Insira a sua nota de biologia: '))
+#fis = int(input('Insira a sua nota de fisica: '))
+#qui = int(input('Insira a sua nota de quimica: '))
+#média = (port+mat+geo+his+art+bio+fis+qui)/8
+#if média <5:
+#    print('{}, você foi REPROVADO! Sua média foi {}'.format(name, média))
+#elif média ==5:
+#    print('{}, você está de RECUPERAÇÃO! Sua média foi {}'.format(name, média))
+#else:
+#    print('{}, você foi APROVADO! Sua média foi de {}, parabéns!'.format(name, média))
+
+#MOSTRAR O ANTECESSOR E O SUCESSOR DE UM NÚMERO
+#num = int(input('Insira o número: '))
+#ant = num-1
+#suc = num+1
+#print('O antecessor de {} é {} e o sucessor é {}'.format(num,ant,suc))
+
+#PAR OU IMPAR!
+
+#player1 = input('Olá player1! Qual é o seu nome?\n')
+#player2 = input('Olá player2! Qual é o seu nome?\n')
+#esc1 = input('{}, escolha um entre par ou impar:\n'.format(player1))
+#while esc1 == 'par':
+#    opção = input('{}, você será impar! Digite ok para continuar: '.format(player2))
+#    if opção == 'ok':
+#        n1 = int(input('{}, escolha um número: '.format(player1)))
+#        n2 = int(input('{}, escolha um número: '.format(player2)))
+#        # impar + par = impar
+#        # par + impar = impar
+#        # par + par + par
+#        # impar + impar = par
+#        # player1 = par - player2 = impar
+#        while n1%2 == 0:
+#            if n2%2 == 0:
+#                print('O resultado da soma é PAR! O ganhador é {}!'.format(player1))
+#            elif n2%2 != 0:
+#                print('O resultado da soma é IMPAR! O ganhador é {}!'.format(player2))
+#            break
+#        while n1%2 != 0:
+#            if n2%2 == 0:
+#                print('O resultado da soma é IMPAR! O ganhador é {}!'.format(player2))
+#            elif n2%2 != 0:
+#                print('O resultado da soma é PAR! O ganhador é {}!'.format(player1))
+#            break
+#    break
+#while esc1 == 'impar':
+#    opção = input('{}, você será par! Digite ok para continuar: '.format(player2))
+#    if opção == 'ok':
+#        n1 = int(input('{}, escolhe um número: '.format(player1)))
+#        n2 = int(input('{}, escolha um número: '.format(player2)))
+#        while n1%2 == 0:
+#            if n2%2 == 0:
+#                print('O resultado da soma é PAR! O ganhador é {}!'.format(player2))
+#            elif n2%2 != 0:
+#                print('O resultado da soma é IMPAR! O ganhador é {}!'.format(player1))
+#            break
+#        while n1%2 != 0:
+#            if n2%2 == 0:
+#                print('O resultado da soma é IMPAR! O ganhador é {}!'.format(player1))
+#            elif n2%2 != 0:
+#                print('O resultado da soma é PAR! O ganhador é {}!'.format(player2))
+#            break
+#    break
+#
+#verresultado = input('Desejam ver o resultado? Digite sim ou não: ')
+#if verresultado == 'sim':
+#    resultado = n1+n2
+#    print('{} somado a {} é {}.'.format(n1,n2,resultado))
+
+
+#PEDRA, PAPEL E TESOURA!
+
+#player1 = input('Olá player1! Qual é o seu nome?\n')
+#player2 = input('Olá player 2! Qual é o seu nome?\n')
+#jogada1 = input('{}, digite um entre pedra, papel ou tesoura:\n'.format(player1))
+#jogada2 = input('{}, digite um entre pedra, papel ou tesoura:\n'.format(player2))
+
+#while jogada1 == jogada2:
+#    print('EMPATE! Tentem novamente!')
+#    jogada1 = input('{}, digite um entre pedra, papel ou tesoura:\n'.format(player1))
+#    jogada2 = input('{}, digite um entre pedra, papel ou tesoura:\n'.format(player2))
+
+#while jogada1 == 'papel':
+#    if jogada2 == 'pedra':
+#        print('O ganhador é {}!'.format(player1))
+#    elif jogada2 == 'tesoura':
+#        print('O ganhador é {}!'.format(player2))
+#    break
+#while jogada1 == 'pedra':
+#    if jogada2 == 'papel':
+#        print('O ganhador é {}!'.format(player2))
+#    elif jogada2 == 'tesoura':
+#        print('O ganhador é {}!'.format(player1))
+#    break
+#while jogada1 == 'tesoura':
+#    if jogada2 == 'papel':
+#        print('O ganhador é {}!'.format(player1))
+#    elif jogada2 == 'pedra':
+#        print('O ganhador é {}!'.format(player2))
+#    break
+
+#BRINCANDO COM VARIAVEIS
 #var1 = 'azul'
 #var2 = 'vermelho'
 #var3 = 'rosa'
 #var4 = 'verde'
+#print('A flor é {0}, o carro é {1}, o céu é {2} e a árvore é {3}.'.format(var3,var2,var1,var4))
+
+#BRIMCANDO COM OS CARACTERES
+#name = input('Qual o seu nome?\n')
+#print('Bom dia, {:#^20}!'.format(name))
+#year1 = int(input('Em que ano você nasceu, {:>10}?\n'.format(name)))
+#year2 = int(input('Em que ano estamos agora, {:<10}?\n'.format(name)))
+#age = year2-year1
+#print('{:$^20},'.format(name),end=' ')
+#print('Você tem {:^20} anos!'.format(age))
 
 #FAZER UM SAQUE
 
@@ -47,7 +170,6 @@
 #novosaldo = saldo-saque
 #print('Saque realizado com sucesso! Seu novo saldo é {}.'.format(novosaldo))
 
-#print('A flor é {0}, o carro é {1}, o céu é {2} e a árvore é {3}.'.format(var3,var2,var1,var4))
 
 #BRINCANDO COMCONDIÇÕES
 #Diz o nome, idade atrevez do ano e as próximas idades até 2100
